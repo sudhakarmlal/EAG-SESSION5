@@ -26,7 +26,7 @@ load_dotenv()
 # Add error handling for OpenAI initialization
 try:
     #openai.api_key = os.getenv('OPENAI_API_KEY')  # Get API key from environment variable
-    openai.api_key ='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'
+    openai.api_key =''
     if not openai.api_key:
         raise ValueError("OpenAI API key not found in environment variables")
 except Exception as e:
